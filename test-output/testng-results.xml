@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-07T01:49:37Z" name="Default suite" finished-at="2023-03-07T01:49:51Z" duration-ms="13890">
+  <suite started-at="2023-03-08T21:06:49Z" name="Default suite" finished-at="2023-03-08T21:07:03Z" duration-ms="14824">
     <groups>
     </groups>
-    <test started-at="2023-03-07T01:49:37Z" name="Default test" finished-at="2023-03-07T01:49:51Z" duration-ms="13890">
+    <test started-at="2023-03-08T21:06:49Z" name="Default test" finished-at="2023-03-08T21:07:03Z" duration-ms="14824">
       <class name="com.kmshoppingapp.testscripts.AddingProductcart">
-        <test-method is-config="true" signature="openapp()[pri:0, instance:com.kmshoppingapp.testscripts.AddingProductcart@79ca92b9]" started-at="2023-03-07T01:49:37Z" name="openapp" finished-at="2023-03-07T01:49:41Z" duration-ms="4500" status="PASS">
+        <test-method is-config="true" signature="openapp()[pri:0, instance:com.kmshoppingapp.testscripts.AddingProductcart@79ca92b9]" started-at="2023-03-08T21:06:49Z" name="openapp" finished-at="2023-03-08T21:06:56Z" duration-ms="6929" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openapp -->
-        <test-method signature="addigncart()[pri:0, instance:com.kmshoppingapp.testscripts.AddingProductcart@79ca92b9]" started-at="2023-03-07T01:49:41Z" name="addigncart" finished-at="2023-03-07T01:49:50Z" duration-ms="9299" status="FAIL">
+        <test-method signature="addigncart()[pri:0, instance:com.kmshoppingapp.testscripts.AddingProductcart@79ca92b9]" started-at="2023-03-08T21:06:56Z" name="addigncart" finished-at="2023-03-08T21:07:03Z" duration-ms="7573" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[Cannot locate an element using xpath=//a[@class='login']
@@ -66,7 +66,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addigncart -->
-        <test-method is-config="true" signature="closeapp(org.testng.ITestResult)[pri:0, instance:com.kmshoppingapp.testscripts.AddingProductcart@79ca92b9]" started-at="2023-03-07T01:49:50Z" name="closeapp" finished-at="2023-03-07T01:49:50Z" duration-ms="46" status="FAIL">
+        <test-method is-config="true" signature="closeapp(org.testng.ITestResult)[pri:0, instance:com.kmshoppingapp.testscripts.AddingProductcart@79ca92b9]" started-at="2023-03-08T21:07:03Z" name="closeapp" finished-at="2023-03-08T21:07:03Z" duration-ms="220" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -82,8 +82,8 @@ from unknown error: web view not found
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-FQD6JN4', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\Asus\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:61045}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 7bbefd2060e47d9a0037ee5b798d519b]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\Asus\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50663}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c4307543f0cc9f46f6bff68f1b1d69da]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
@@ -92,8 +92,8 @@ from unknown error: web view not found
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-FQD6JN4', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\Asus\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:61045}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 7bbefd2060e47d9a0037ee5b798d519b
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\Asus\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50663}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c4307543f0cc9f46f6bff68f1b1d69da
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
