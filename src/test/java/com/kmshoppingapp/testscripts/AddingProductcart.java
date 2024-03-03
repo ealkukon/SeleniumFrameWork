@@ -3,6 +3,7 @@ package com.kmshoppingapp.testscripts;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.kmshoppingapp.pom.pages.Addtocart;
@@ -29,6 +30,8 @@ public class AddingProductcart extends Baseclass {
 		Addtocart a=new Addtocart(driver);
 		a.plusbutton();
 		Utilies.dropDown(a.getSizedd(), Propertyfile.getpropertyfiledata("sizedd"));
+		a.addingtocart();
+		Assert.assertEquals(driver.getTitle(),Propertyfile.getpropertyfiledata("addtocarttitle"));
 	}
 
 }

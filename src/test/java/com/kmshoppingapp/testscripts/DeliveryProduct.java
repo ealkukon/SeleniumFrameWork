@@ -3,6 +3,7 @@ package com.kmshoppingapp.testscripts;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.kmshoppingapp.pom.pages.EveningDress;
@@ -25,6 +26,7 @@ public class DeliveryProduct extends Baseclass {
 		
 		EveningDress e=new EveningDress(driver);
 		e.deliveryproduct();
+		Assert.assertEquals(driver.getTitle(),Propertyfile.getpropertyfiledata("deliverytitle"));
 		
 	}
 

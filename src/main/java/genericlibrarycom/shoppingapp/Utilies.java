@@ -1,5 +1,10 @@
 package genericlibrarycom.shoppingapp;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
+import java.util.Set;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -28,6 +33,26 @@ public class Utilies {
 	
 	public static void alert(WebDriver driver) {
 		driver.switchTo().alert().accept();
+	}
+	
+	public static void draganddrop(WebDriver driver,WebElement src,WebElement dest) {
+		Actions a=new Actions(driver);
+		a.dragAndDrop(src,dest).perform();
+	}
+	
+	public static void robot() throws AWTException {
+		Robot r=new Robot();
+		r.keyPress(KeyEvent.VK_CONTROL);
+		r.keyPress(KeyEvent.VK_T);
+		r.keyRelease(KeyEvent.VK_CONTROL);
+		r.keyRelease(KeyEvent.VK_T);
+	}
+	
+	public static void switchWindow(WebDriver driver) {
+		Set<String> child = driver.getWindowHandles();
+		for(String b:child) {
+			driver.switchTo().window(b);
+		}
 	}
 
 }
