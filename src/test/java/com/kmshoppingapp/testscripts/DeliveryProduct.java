@@ -1,5 +1,6 @@
 package com.kmshoppingapp.testscripts;
 
+
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
@@ -10,11 +11,11 @@ import com.kmshoppingapp.pom.pages.EveningDress;
 import com.kmshoppingapp.pom.pages.Home;
 import com.kmshoppingapp.pom.pages.Login;
 
-import genericlibrarycom.shoppingapp.Baseclass;
+
 import genericlibrarycom.shoppingapp.Propertyfile;
 import genericlibrarycom.shoppingapp.Utilies;
 
-public class DeliveryProduct extends Baseclass {
+public class DeliveryProduct extends genericlibraryShoppingapp.Baseclass {
 	@Test 
 	public void productdeliver() throws FileNotFoundException, IOException {
 		Login l=new Login(driver);

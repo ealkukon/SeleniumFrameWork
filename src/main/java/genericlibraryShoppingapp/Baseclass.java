@@ -1,12 +1,6 @@
-package genericlibrarycom.shoppingapp;
+package genericlibraryShoppingapp;
 
 import java.io.FileNotFoundException;
-/**
- * 
- * @author Asus
- * 
- */
-
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
@@ -17,18 +11,24 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 
+/**
+ * 
+ * @author QSP
+ *
+ */
+
 public class Baseclass implements Autoconstant {
 	/**
-	 * open the application close the application take photo
+	 * open the application and close the application take photo
 	 */
-public WebDriver driver;
+	public WebDriver driver;
 	
 	@BeforeMethod
 	public void openapp() throws FileNotFoundException, IOException {
 		System.setProperty(key, value);
 		driver=new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get(Propertyfile.getpropertyfiledata("url"));
+		driver.get(PropertyFile.getpropertyfiledata("url"));
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 	}
 	
@@ -44,6 +44,7 @@ public WebDriver driver;
 	}
 
 }
+
 
 
 

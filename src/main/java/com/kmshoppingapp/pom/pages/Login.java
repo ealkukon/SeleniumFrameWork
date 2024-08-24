@@ -7,16 +7,16 @@ import org.openqa.selenium.support.PageFactory;
 
 public class Login {
 	
-		@FindBy(xpath="//a[@class='login']")
-		private WebElement signin;
+		//@FindBy(name="email")
+		//private WebElement signin;
 
-		@FindBy(id="email")
+		@FindBy(name="email")
 		private WebElement emailaddresstb;
 
-		@FindBy(id="passwd")
+		@FindBy(name="password")
 		private WebElement passwordtb;
 
-		@FindBy(id="SubmitLogin")
+		@FindBy(xpath="//*[@type=\"submit\"]")
 		private WebElement sumbit;
 
 		public Login(WebDriver driver) {
@@ -24,7 +24,7 @@ public class Login {
 		}
 
 		public void loginCredtial(String email,String password) {
-			signin.click();
+			//signin.click();
 			emailaddresstb.sendKeys(email);
 			passwordtb.sendKeys(password);
 			sumbit.click();

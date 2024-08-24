@@ -1,13 +1,12 @@
 package com.kmshoppingapp.testscripts;
 
+import genericlibrarycom.shoppingapp.Utilies;
+
 import java.awt.AWTException;
 
 import org.testng.annotations.Test;
 
-import genericlibrarycom.shoppingapp.Baseclass;
-import genericlibrarycom.shoppingapp.Utilies;
-
-public class Sample extends Baseclass {
+public class Sample extends genericlibraryShoppingapp.Baseclass {
 	@Test
 	public void demo() throws AWTException, InterruptedException {
 		Utilies.robot();

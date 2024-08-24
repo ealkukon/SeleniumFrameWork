@@ -1,7 +1,7 @@
 package genericlibrarycom.shoppingapp;
 /**
  * 
- * @author Asus
+ * @author kukon
  *
  */
 
